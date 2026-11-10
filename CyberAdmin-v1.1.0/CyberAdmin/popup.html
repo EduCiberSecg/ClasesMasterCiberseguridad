@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CyberAdmin</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+<header><div class="logo" aria-hidden="true"></div><div><b>CYBERADMIN</b><small>SECURITY OPERATIONS CENTER</small></div><span id="risk" class="risk">—</span></header>
+<section class="grid" id="kpis"></section>
+<section class="quick">
+  <label for="url">Análisis rápido de URL (local, sin envío a terceros)</label>
+  <div class="row"><input id="url" type="text" maxlength="2048" placeholder="https://ejemplo.com/login" autocomplete="off" spellcheck="false"><button id="go">Analizar</button></div>
+  <div id="result" role="status" aria-live="polite"></div>
+</section>
+<nav class="links">
+  <button data-go="/">Dashboard</button><button data-go="/incidents">Incidentes</button><button data-go="/alerts">Alertas</button><button data-go="/playbooks">Protocolos</button>
+</nav>
+<button id="open" class="primary">Abrir centro de control completo</button>
+<script type="module" src="popup.js"></script>
+</body></html>

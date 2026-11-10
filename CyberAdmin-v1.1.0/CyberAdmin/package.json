@@ -1,0 +1,15 @@
+{
+  "name": "cyberadmin-security-center",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "CyberAdmin Security Center - extensión MV3 (Chrome/Edge). Sin dependencias de runtime.",
+  "scripts": {
+    "check": "node scripts/check-deps.mjs",
+    "validate": "node scripts/validate.mjs",
+    "test": "node scripts/run-tests.mjs",
+    "zip": "node scripts/build-zip.mjs",
+    "all": "node scripts/check-deps.mjs && node scripts/validate.mjs && node scripts/run-tests.mjs && node scripts/build-zip.mjs"
+  },
+  "engines": { "node": ">=18" }
+}

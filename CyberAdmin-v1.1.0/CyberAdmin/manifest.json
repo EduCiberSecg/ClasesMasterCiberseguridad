@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "CyberAdmin Security Center",
+  "short_name": "CyberAdmin",
+  "version": "1.1.0",
+  "description": "Centro de control SOC para administradores: phishing, incidentes, protocolos, alertas, auditoría e informes.",
+  "minimum_chrome_version": "110",
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "action": {
+    "default_title": "CyberAdmin Security Center",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png"
+    }
+  },
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications",
+    "contextMenus"
+  ],
+  "optional_host_permissions": [
+    "https://safebrowsing.googleapis.com/*",
+    "https://www.virustotal.com/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://safebrowsing.googleapis.com https://www.virustotal.com http://localhost:* http://127.0.0.1:*"
+  }
+}

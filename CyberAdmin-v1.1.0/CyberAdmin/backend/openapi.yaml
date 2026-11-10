@@ -1,0 +1,9 @@
+openapi: 3.0.3
+info: { title: CyberAdmin Backend (andamiaje), version: 0.1.0 }
+security: [{ bearer: [] }]
+components: { securitySchemes: { bearer: { type: http, scheme: bearer } } }
+paths:
+  /health: { get: { security: [], responses: { '200': { description: OK } } } }
+  /api/v1/incidents:
+    get: { summary: Lista incidentes, responses: { '200': { description: OK } } }
+    post: { summary: Registra un incidente, responses: { '201': { description: Creado }, '400': { description: Inválido } } }

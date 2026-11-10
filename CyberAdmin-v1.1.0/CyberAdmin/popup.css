@@ -1,0 +1,16 @@
+:root{--bg:#050b18;--panel:#0b1730;--line:#16305c;--text:#d7e3ff;--mut:#7f95c2;--blue:#2f7bff;--green:#19e68c;--red:#ff3b5c;--amber:#ffb020;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;width:360px;background:linear-gradient(160deg,#050b18,#0a1a3a);color:var(--text);font:13px/1.4 "Segoe UI",system-ui,sans-serif;padding:12px}
+header{display:flex;align-items:center;gap:10px;margin-bottom:12px}header b{letter-spacing:.18em;display:block}header small{color:var(--mut);font-size:9px;letter-spacing:.2em}
+.logo{width:30px;height:30px;border-radius:8px;background:radial-gradient(circle at 30% 30%,var(--green),var(--blue));box-shadow:0 0 14px #2f7bff88}
+.risk{margin-left:auto;padding:3px 8px;border-radius:999px;border:1px solid var(--line);font-size:11px;font-weight:700}
+.risk.low{color:var(--green);border-color:var(--green)}.risk.medium{color:var(--amber);border-color:var(--amber)}.risk.high,.risk.critical{color:var(--red);border-color:var(--red)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:12px}
+.k{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px;text-align:center}.k b{display:block;font-size:18px}.k span{font-size:9px;color:var(--mut);text-transform:uppercase}
+.quick{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px;margin-bottom:10px}label{color:var(--mut);font-size:11px}
+.row{display:flex;gap:6px;margin-top:6px}input{flex:1;background:#050b18;border:1px solid var(--line);border-radius:6px;color:var(--text);padding:7px}
+input:focus,button:focus-visible{outline:2px solid var(--blue)}
+button{background:#122a55;color:var(--text);border:1px solid var(--line);border-radius:6px;padding:7px 10px;cursor:pointer}button:hover{border-color:var(--blue)}
+.primary{width:100%;background:linear-gradient(90deg,var(--blue),#17c6a3);border:0;font-weight:700;color:#00101f;padding:10px}
+.links{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:10px}.links button{padding:6px 2px;font-size:11px}
+#result{margin-top:8px;font-size:12px}.lvl{font-weight:700}.lvl.low{color:var(--green)}.lvl.medium{color:var(--amber)}.lvl.high,.lvl.critical{color:var(--red)}
+#result ul{margin:4px 0 0 16px;padding:0;color:var(--mut)}

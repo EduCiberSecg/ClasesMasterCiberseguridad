@@ -1,0 +1,7 @@
+{
+  "_comment": "Política de referencia de la extensión (documentación; no se carga en runtime).",
+  "permissions": { "storage": "datos locales", "alarms": "refresco del badge", "notifications": "alertas críticas", "contextMenus": "analizar enlace (local)" },
+  "optionalHostPermissions": { "safebrowsing.googleapis.com": "solo tras consentimiento por análisis", "www.virustotal.com": "solo tras consentimiento por análisis" },
+  "neverRequested": ["tabs", "history", "cookies", "webRequest", "<all_urls>", "scripting", "downloads"],
+  "dataHandling": { "storage": "IndexedDB + chrome.storage.local, solo en el equipo del usuario", "telemetry": "ninguna", "remoteCode": "nunca" }
+}
